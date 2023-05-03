@@ -1,0 +1,13 @@
+CREATE TABLE `tab_tarefas` (
+  `id` int(11) NOT NULL,
+  `nome_tarefa` varchar(80) NOT NULL,
+  `desc_tarefa` text NOT NULL,
+  `data_tarefa` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `tab_tarefas`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `tab_tarefas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;
